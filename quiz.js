@@ -208,7 +208,7 @@ let questions=[
                 <b>Negative Marking:</b>
                 <ul>
                 <li><b>i) Correct answer:</b> ✅ +1 point</li>
-                <li><b>ii) Wrong answer:</b> ❌ −0.25 points (optional)</li>
+                <li><b>ii) Wrong answer:</b> 0 points</li>
                 <li><b>iii) Unattempted question:</b> 0 points</li>
             </ul>
                 </li>
@@ -226,3 +226,4 @@ let questions=[
         }
 
         
+
