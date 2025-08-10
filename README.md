@@ -20,7 +20,7 @@ The quiz keeps track of your correct, incorrect, and unattempted questions, and 
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/quiz-app.git
+   git clone https://github.com/beingpourush/quiz-app.git
    ```
 2. Open `index.html` in your browser — no server required.
 
