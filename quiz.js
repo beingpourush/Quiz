@@ -203,7 +203,6 @@ let questions=[
             
              <div class="container">
             <ol>
-              <li><b>Number of Questions:</b> 10</li>
               <li><b>Question Format:</b> Each question has 4 options — only one is correct.</li>
               <li>
                 <b>Negative Marking:</b>
@@ -225,4 +224,5 @@ let questions=[
             
             `;
         }
+
         
