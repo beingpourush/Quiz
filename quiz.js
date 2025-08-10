@@ -82,10 +82,37 @@ let questions=[
         optionC: 'Rohit Sharma',
         optionD: 'Mitchell Starc',
         correctAnswer: 'Kane Williamson'
-    }
+    },
 
 
         ];
+
+        document.querySelector('.container').innerHTML=`
+        
+        <ol>
+        <li><b>Number of Questions:</b>${questions.length}</li>
+        <li><b>Question Format:</b> Each question has 4 options — only one is correct.</li>
+        <li>
+          <b>Negative Marking:</b>
+          <ul>
+            <li><b>i) Correct answer:</b> ✅ +1 point</li>
+            <li><b>ii) Wrong answer:</b> ❌ 0 points</li>
+            <li><b>iii) Unattempted question:</b> 0 points</li>
+          </ul>
+        </li>
+        <li><b>Skipping a Question:</b> You may choose not to answer a question and move to the next one.</li>
+        <li><b>No Going Back:</b> Once you move to the next question, you cannot return to the previous one.</li>
+        <li><b>Timing:</b> No time limit per question unless specified, but complete the quiz in one sitting.</li>
+      </ol>
+        
+        `;
+
+        document.querySelector('.next-container').innerHTML=`
+        
+        <button onclick="playQuiz()">Play Quiz</button>
+        
+        `;
+
         let i;
         function nextQ(nextIndex){
             if(nextIndex>=questions.length){
@@ -199,18 +226,17 @@ let questions=[
                 correctAnswers=0;
                 incorrectAnswers=0;
                 unattempted=0;
-                document.querySelector('.container')?.classList.remove('quiz-mode');
-                document.querySelector('.next-container')?.classList.remove('quiz-mode');
             document.querySelector('.wrapper').innerHTML=`
             
              <div class="container">
             <ol>
+              <li><b>Number of Questions:</b> ${questions.length}</li>
               <li><b>Question Format:</b> Each question has 4 options — only one is correct.</li>
               <li>
                 <b>Negative Marking:</b>
                 <ul>
                 <li><b>i) Correct answer:</b> ✅ +1 point</li>
-                <li><b>ii) Wrong answer:</b> 0 points</li>
+                <li><b>ii) Wrong answer:</b> ❌ 0 points</li>
                 <li><b>iii) Unattempted question:</b> 0 points</li>
             </ul>
                 </li>
@@ -226,7 +252,4 @@ let questions=[
             
             `;
         }
-
         
-
-
