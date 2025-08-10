@@ -2,90 +2,169 @@
 let correctAnswers=0;
 let incorrectAnswers=0;
 let unattempted=0;
-let questions=[
+let questions = [
     {
-        question: 'Who holds the record for the highest individual score in a One Day International (ODI) match?',
-        optionA: 'Rohit Sharma',
-        optionB: 'Martin Guptill',
-        optionC: 'Virender Sehwag',
-        optionD: 'Chris Gayle',
-        correctAnswer: 'Rohit Sharma'
+        question: 'What is Walter White’s profession at the start of the series?',
+        optionA: 'High school chemistry teacher',
+        optionB: 'Police officer',
+        optionC: 'Mechanic',
+        optionD: 'Pharmacist',
+        correctAnswer: 'High school chemistry teacher'
     },
     {
-        question: 'Which country won the first ICC Cricket World Cup in 1975?',
-        optionA: 'Australia',
-        optionB: 'England',
-        optionC: 'West Indies',
-        optionD: 'India',
-        correctAnswer: 'West Indies'
+        question: 'What is the street name of Walter White’s alter ego?',
+        optionA: 'Heisenberg',
+        optionB: 'Eisenberg',
+        optionC: 'Schrödinger',
+        optionD: 'Blue King',
+        correctAnswer: 'Heisenberg'
     },
     {
-        question: 'Who was the captain of the Indian cricket team when they won the 2011 ICC Cricket World Cup?',
-        optionA: 'Virat Kohli',
-        optionB: 'MS Dhoni',
-        optionC: 'Sourav Ganguly',
-        optionD: 'Sachin Tendulkar',
-        correctAnswer: 'MS Dhoni'
+        question: 'Who is Walter White’s former student and later partner in crime?',
+        optionA: 'Hank Schrader',
+        optionB: 'Saul Goodman',
+        optionC: 'Jesse Pinkman',
+        optionD: 'Gustavo Fring',
+        correctAnswer: 'Jesse Pinkman'
     },
     {
-        question: 'Which bowler has taken the most wickets in Test cricket?',
-        optionA: 'Muttiah Muralitharan',
-        optionB: 'Shane Warne',
-        optionC: 'James Anderson',
-        optionD: 'Anil Kumble',
-        correctAnswer: 'Muttiah Muralitharan'
+        question: 'What color is the methamphetamine produced by Walt and Jesse?',
+        optionA: 'White',
+        optionB: 'Blue',
+        optionC: 'Yellow',
+        optionD: 'Clear',
+        correctAnswer: 'Blue'
     },
     {
-        question: 'In cricket, what is the maximum number of overs a bowler can bowl in a standard ODI match?',
-        optionA: '5 overs',
-        optionB: '10 overs',
-        optionC: '15 overs',
-        optionD: '20 overs',
-        correctAnswer: '10 overs'
+        question: 'What fast-food restaurant chain does Gustavo Fring own?',
+        optionA: 'Los Pollos Hermanos',
+        optionB: 'Pollos Amigos',
+        optionC: 'El Pollo Feliz',
+        optionD: 'Chicken Brothers',
+        correctAnswer: 'Los Pollos Hermanos'
     },
     {
-        question: 'Who scored the fastest century in ODI cricket?',
-        optionA: 'AB de Villiers',
-        optionB: 'Corey Anderson',
-        optionC: 'Shahid Afridi',
-        optionD: 'Virat Kohli',
-        correctAnswer: 'AB de Villiers'
+        question: 'What type of cancer is Walter White diagnosed with?',
+        optionA: 'Lung cancer',
+        optionB: 'Pancreatic cancer',
+        optionC: 'Liver cancer',
+        optionD: 'Throat cancer',
+        correctAnswer: 'Lung cancer'
     },
     {
-        question: 'Which stadium is known as the “Home of Cricket”?',
-        optionA: 'Eden Gardens',
-        optionB: 'Melbourne Cricket Ground',
-        optionC: 'Lord’s Cricket Ground',
-        optionD: 'The Oval',
-        correctAnswer: 'Lord’s Cricket Ground'
+        question: 'Who is Hank Schrader married to?',
+        optionA: 'Skyler White',
+        optionB: 'Marie Schrader',
+        optionC: 'Jane Margolis',
+        optionD: 'Lydia Rodarte-Quayle',
+        correctAnswer: 'Marie Schrader'
     },
     {
-        question: 'Who was the first batsman to score 10,000 runs in Test cricket?',
-        optionA: 'Sunil Gavaskar',
-        optionB: 'Allan Border',
-        optionC: 'Brian Lara',
-        optionD: 'Sachin Tendulkar',
-        correctAnswer: 'Sunil Gavaskar'
+        question: 'What is the name of Saul Goodman’s real persona?',
+        optionA: 'Jimmy McGill',
+        optionB: 'James Gordon',
+        optionC: 'Saul Bernstein',
+        optionD: 'Michael Ehrmantraut',
+        correctAnswer: 'Jimmy McGill'
     },
     {
-        question: 'Which country hosted the ICC T20 World Cup in 2022?',
-        optionA: 'India',
-        optionB: 'Australia',
-        optionC: 'England',
-        optionD: 'South Africa',
-        correctAnswer: 'Australia'
+        question: 'Which character says the line, "I am the one who knocks"?',
+        optionA: 'Hank Schrader',
+        optionB: 'Walter White',
+        optionC: 'Jesse Pinkman',
+        optionD: 'Mike Ehrmantraut',
+        correctAnswer: 'Walter White'
     },
     {
-        question: 'Who was named the Player of the Tournament in the 2019 ICC Cricket World Cup?',
-        optionA: 'Ben Stokes',
-        optionB: 'Kane Williamson',
-        optionC: 'Rohit Sharma',
-        optionD: 'Mitchell Starc',
-        correctAnswer: 'Kane Williamson'
+        question: 'What is the name of Jesse Pinkman’s girlfriend who dies in season 2?',
+        optionA: 'Andrea Cantillo',
+        optionB: 'Jane Margolis',
+        optionC: 'Wendy S.',
+        optionD: 'Marie Schrader',
+        correctAnswer: 'Jane Margolis'
     },
+    {
+        question: 'What poisonous plant does Walter use to harm Brock?',
+        optionA: 'Hemlock',
+        optionB: 'Lily of the Valley',
+        optionC: 'Oleander',
+        optionD: 'Foxglove',
+        correctAnswer: 'Lily of the Valley'
+    },
+    {
+        question: 'What is Mike Ehrmantraut’s previous profession?',
+        optionA: 'Private detective',
+        optionB: 'Lawyer',
+        optionC: 'Ex-cop',
+        optionD: 'FBI agent',
+        correctAnswer: 'Ex-cop'
+    },
+    {
+        question: 'Who kills Gustavo Fring?',
+        optionA: 'Jesse Pinkman',
+        optionB: 'Hector Salamanca',
+        optionC: 'Walter White',
+        optionD: 'Mike Ehrmantraut',
+        correctAnswer: 'Hector Salamanca'
+    },
+    {
+        question: 'What does "DEA" stand for, where Hank Schrader works?',
+        optionA: 'Drug Enforcement Agency',
+        optionB: 'Drug Enforcement Administration',
+        optionC: 'Danger Enforcement Agency',
+        optionD: 'Defense Enforcement Administration',
+        correctAnswer: 'Drug Enforcement Administration'
+    },
+    {
+        question: 'Who is Lydia Rodarte-Quayle associated with?',
+        optionA: 'Madrigal Electromotive',
+        optionB: 'Los Pollos Hermanos',
+        optionC: 'DEA',
+        optionD: 'Schrader Minerals',
+        correctAnswer: 'Madrigal Electromotive'
+    },
+    {
+        question: 'What is the name of Walt and Skyler’s car wash?',
+        optionA: 'Sparkle Car Wash',
+        optionB: 'A1A Car Wash',
+        optionC: 'Blue Crystal Car Wash',
+        optionD: 'Supreme Shine Car Wash',
+        correctAnswer: 'A1A Car Wash'
+    },
+    {
+        question: 'Which chemical is used by Walt and Jesse to dissolve bodies?',
+        optionA: 'Sulfuric acid',
+        optionB: 'Hydrochloric acid',
+        optionC: 'Hydrofluoric acid',
+        optionD: 'Nitric acid',
+        correctAnswer: 'Hydrofluoric acid'
+    },
+    {
+        question: 'What does Walt throw at a car in frustration in season 5?',
+        optionA: 'A brick',
+        optionB: 'A pizza',
+        optionC: 'A wrench',
+        optionD: 'A chair',
+        correctAnswer: 'A pizza'
+    },
+    {
+        question: 'Who kills Hank Schrader?',
+        optionA: 'Jack Welker',
+        optionB: 'Todd Alquist',
+        optionC: 'Walter White',
+        optionD: 'Jesse Pinkman',
+        correctAnswer: 'Jack Welker'
+    },
+    {
+        question: 'What is the final song played in the series finale?',
+        optionA: 'Crystal Blue Persuasion',
+        optionB: 'Baby Blue',
+        optionC: 'Goodbye My Lover',
+        optionD: 'Don’t Stop Believin’',
+        correctAnswer: 'Baby Blue'
+    }
+];
 
-
-        ];
 
         document.querySelector('.container').innerHTML=`
         
@@ -253,3 +332,4 @@ let questions=[
             `;
         }
         
+
