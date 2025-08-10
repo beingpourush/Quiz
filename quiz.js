@@ -199,6 +199,8 @@ let questions=[
                 correctAnswers=0;
                 incorrectAnswers=0;
                 unattempted=0;
+                document.querySelector('.container')?.classList.remove('quiz-mode');
+                document.querySelector('.next-container')?.classList.remove('quiz-mode');
             document.querySelector('.wrapper').innerHTML=`
             
              <div class="container">
@@ -226,4 +228,5 @@ let questions=[
         }
 
         
+
 
