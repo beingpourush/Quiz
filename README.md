@@ -20,7 +20,7 @@ The quiz keeps track of your correct, incorrect, and unattempted questions, and 
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/beingpourush/quiz-app.git
+   git clone https://github.com/beingpourush/Quiz.git
    ```
 2. Open `index.html` in your browser — no server required.
 
@@ -50,7 +50,7 @@ Example question object:
 
 ## 📂 Project Structure
 ```
-quiz-app/
+Quiz/
 │
 ├── index.html   # Main HTML file
 ├── quiz.css    # Styles for the quiz
