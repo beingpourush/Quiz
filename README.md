@@ -52,7 +52,7 @@ Example question object:
 ```
 quiz-app/
 │
-├── quiz.html   # Main HTML file
+├── index.html   # Main HTML file
 ├── quiz.css    # Styles for the quiz
 ├── quiz.js      # Quiz logic and questions array
 └── README.md    # Project documentation
